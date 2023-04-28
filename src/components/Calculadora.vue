@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <h1
-      class="text-4xl font-black capitalize ml-5 sm:ml-10 md:ml-24 lg:ml-0 py-14"
+      class="text-4xl font-black capitalize ml-5 sm:ml-16 md:ml-24 lg:ml-24 py-14"
     >
       CALCULA EL PESO DE TU PAQUETE
     </h1>

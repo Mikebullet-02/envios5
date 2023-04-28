@@ -3,13 +3,13 @@
   <Header></Header>
   <div
     id="envios"
-    class="flex flex-col w-full xl:px-32 lg:px-52 md:px-0 sm:px-0 px-0 my-auto"
+    class="flex flex-col w-full xl:px-32 lg:px-0 md:px-0 sm:px-0 px-0 my-auto"
   >
     <Envios></Envios>
   </div>
   <div
     id="cobertura"
-    class="flex flex-col w-full sm:w-[599px] md:w-[768px] lg:w-[930px] xl:w-[1100px] 2xl:w-full px-3 lg:px-0 md:px-0 sm:lg:px-0 my-auto"
+    class="flex flex-col w-full sm:w-full md:w-full lg:w-[930px] xl:w-[1100px] 2xl:w-full px-3 lg:px-0 md:px-0 sm:lg:px-0 my-auto"
   >
     <h1
       class="text-4xl font-black capitalize ml-5 sm:ml-10 md:ml-24 lg:ml-40 xl:ml-52 pt-16 pb-5 sm:pt-15 sm:pb-5"
@@ -23,7 +23,7 @@
     </h2>
     <div class="mx-auto">
       <div
-        class="flex flex-wrap justify-center pt-0 pb-5 pl-0 sm:pl-0 xl:pl-24 md:px-auto sm:pb-8 space-x-0 sm:space-x-0 md:space-x-0"
+        class="flex flex-wrap justify-center pt-0 pb-5 pl-0 sm:pl-0 xl:pl-24 md:px-auto sm:pb-8 space-x-0 sm:space-x-0"
       >
         <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-8">
           <select
