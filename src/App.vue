@@ -3,33 +3,33 @@
   <Header></Header>
   <div
     id="envios"
-    class="flex flex-col w-full xl:px-32 lg:px-0 md:px-0 sm:px-0 px-0 my-auto"
+    class="flex flex-col w-full 2xl:px-32 xl:px-32 lg:px-0 md:px-0 sm:px-0 px-0 my-auto"
   >
     <Envios></Envios>
   </div>
   <div
     id="cobertura"
-    class="flex flex-col w-full sm:w-full md:w-full lg:w-[930px] xl:w-[1100px] 2xl:w-full px-3 lg:px-0 md:px-0 sm:lg:px-0 my-auto"
+    class="flex flex-col w-full sm:w-full md:w-full lg:w-[1024px] xl:w-[1280px] 2xl:w-full px-3 2xl:px-32 xl:px-32 lg:px-0 md:px-0 sm:lg:px-0 my-auto"
   >
     <h1
-      class="text-4xl font-black capitalize ml-5 sm:ml-10 md:ml-24 lg:ml-40 xl:ml-52 pt-16 pb-5 sm:pt-15 sm:pb-5"
+      class="text-4xl font-black capitalize ml-5 sm:ml-10 md:ml-24 lg:ml-24 xl:ml-52 2xl:ml-24 pt-16 pb-5 sm:pt-15 sm:pb-5"
     >
       COBERTURA DE ENVÍOS
     </h1>
     <h2
-      class="text-2xl font-regular ml-5 sm:ml-14 md:ml-28 lg:ml-44 xl:ml-52 pb-8"
+      class="text-2xl font-regular ml-5 sm:ml-14 md:ml-28 lg:ml-28 xl:ml-52 2xl:ml-32 pb-8"
     >
       Selecciona la ciudad desde donde envías tu paquete y el destino.
     </h2>
     <div class="mx-auto">
       <div
-        class="flex flex-wrap justify-center pt-0 pb-5 pl-0 sm:pl-0 xl:pl-24 md:px-auto sm:pb-8 space-x-0 sm:space-x-0"
+        class="flex flex-wrap justify-center pt-0 pb-5 pl-0 sm:pl-0 lg:pr-32 xl:pl-24 md:px-auto sm:pb-8 space-x-0 sm:space-x-0 lg:space-x-0"
       >
         <div class="w-full md:w-1/2 lg:w-1/2 px-4 mb-8 md:mb-8">
           <select
             v-model="origen"
             @change="(e) => cargar(e)"
-            class="block sm:w-96 lg:w-72 py-3 px-4 leading-tight text-gray-700 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-[#D9D9D9] dark:border-white dark:placeholder-gray-200 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="block sm:w-[580px] md:w-[350px] lg:w-72 py-3 px-4 leading-tight text-gray-700 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-[#D9D9D9] dark:border-white dark:placeholder-gray-200 dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="¿Dónde dejar tus paquetes?"
           >
             <option>¿Dónde dejar tus paquetes?</option>
@@ -79,7 +79,7 @@
         <div class="w-full md:w-1/2 lg:w-1/3 pl-4 mb-0 md:mb-0">
           <select
             v-model="destino"
-            class="block sm:w-96 w-72 lg:w-72 py-3 px-4 leading-tight text-gray-700 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-[#D9D9D9] dark:border-white dark:placeholder-gray-200 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="block sm:w-[580px] md:w-[350px] w-72 lg:w-72 py-3 px-4 leading-tight text-gray-700 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-[#D9D9D9] dark:border-white dark:placeholder-gray-200 dark:focus:ring-blue-500 dark:focus:border-blue-500"
           >
             <option value="">¿Dónde recoger tus paquetes?</option>
             <option
@@ -128,7 +128,7 @@
       </div>
     </div>
     <div
-      class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2 sm:gap-3 place-items-center px-auto sm:px-fixed xl:px-auto mx-0 sm:mx-20 xl:pl-48"
+      class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2 sm:gap-3 place-items-center px-auto sm:px-fixed xl:px-auto mx-0 sm:mx-20 xl:px-20"
     >
       <div
         v-if="destino != null"
@@ -240,13 +240,13 @@
   </div>
   <div
     id="calcula"
-    class="flex flex-col w-full lg:px-52 md:px-0 sm:lg:px-0 px-0 my-auto"
+    class="flex flex-col w-full 2xl:px-32 xl:px-32 md:px-0 sm:lg:px-0 px-0 my-auto"
   >
     <Calculadora></Calculadora>
   </div>
   <div
     id="tarifas"
-    class="flex flex-col w-full lg:px-52 md:px-0 sm:lg:px-0 px-0 my-auto"
+    class="flex flex-col w-full 2xl:px-32 xl:px-32 md:px-0 sm:lg:px-0 px-0 my-auto"
   >
     <Formulario></Formulario>
   </div>

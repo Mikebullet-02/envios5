@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-300 w-full sm:w-full md:w-full lg:w-[930px] xl:w-[1000px] 2xl:w-[1300px] mt-auto mb-0 h-auto"
+    class="bg-gray-300 w-full sm:w-full md:w-full lg:w-[1024px] xl:w-auto 2xl:w-auto mt-auto mb-0 h-auto"
   >
     <h1
       class="text-4xl font-black capitalize ml-5 sm:ml-10 md:ml-24 pt-10 pb-5"

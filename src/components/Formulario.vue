@@ -1,9 +1,11 @@
 <template>
   <div class="w-full">
-    <h1 class="text-4xl font-black capitalize ml-5 sm:ml-24 pt-14 pb-5">
+    <h1
+      class="text-4xl font-black capitalize ml-5 sm:ml-16 pt-14 pb-5 2xl:ml-24"
+    >
       TARIFAS PREFERENCIALES
     </h1>
-    <h2 class="text-3xl font-extrabold capitalize sm:ml-32 ml-8">
+    <h2 class="text-3xl font-extrabold capitalize sm:ml-20 ml-8 2xl:ml-32">
       Para impulsar tu negocio
     </h2>
     <div
@@ -93,7 +95,9 @@
                 </button>
               </div>
             </form>
-            <div class="bg-white sm:rounded-lg order-first sm:order-last">
+            <div
+              class="bg-white sm:rounded-lg order-first sm:order-first md:order-last pl-0 sm:pl-14 md:pl-5 lg:pl-10 xl:pl-24"
+            >
               <div
                 class="flex items-center mt-8 text-gray-600 dark:text-gray-400"
               >
@@ -243,46 +247,35 @@ const handleSubmit = () => {
   };
 
   console.log(data);
-
-  // create a new instance of PHPMailer
-  const mail = new PHPMailer();
-
-  // configure the SMTP settings
-  mail.isSMTP();
-  mail.Host = "smtp.gmail.com";
-  mail.Port = 587;
-  mail.SMTPAuth = true;
-  mail.Username = "your_gmail_address@gmail.com";
-  mail.Password = "your_gmail_password";
-  mail.SMTPSecure = "tls";
-
-  // configure the email message
-  mail.SetFrom("desarrollowebodm@gmail.com", "Desarrollo Web ODM");
-  mail.AddAddress("mauriciodelgado1300@gmail.com", "Miguel Delgado");
-  mail.Subject = "Nuevo Cliente Potencial";
-
-  mail.Body = `
-    Nombre completo: ${url.value}
-    Teléfono: ${telefono.value}
-    Nombre de tu empresa: ${empresa.value}
-    Ciudad: ${ciudad.value}
-    Correo electrónico: ${email.value}
-    Opción seleccionada: ${selectedOption.value}
-  `;
-
-  // send the email
-  try {
-    mail.Send();
-    url.value = "";
-    telefono.value = "";
-    empresa.value = "";
-    ciudad.value = "";
-    email.value = "";
-    selectedOption.value = "";
-    alert("Correo enviado con éxito");
-  } catch (error) {
-    console.error(error);
-    alert("An error occurred while sending the email.");
-  }
+  fetch("http://localhost:5000/sendEmail", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      url: url.value,
+      telefono: telefono.value,
+      empresa: empresa.value,
+      ciudad: ciudad.value,
+      email: email.value,
+      selectedOption: selectedOption.value,
+    }),
+  })
+    .then((response) => response.text())
+    .then((result) => {
+      console.log(result);
+      alert(result);
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("An error occurred while sending the email.");
+    });
+  console.log("FORMULARIO");
+  url.value = "";
+  telefono.value = "";
+  empresa.value = "";
+  ciudad.value = "";
+  email.value = "";
+  selectedOption.value = "";
 };
 </script>

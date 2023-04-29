@@ -29,8 +29,9 @@ app.post("/sendEmail", (req, res) => {
 
     const mailOptions = {
         from: "desarrollowebodm@gmail.com",
-        to: "jcmurillo@odm.com.mx",
-        cc: ['cma@odm.com.mx', 'jefedigitalodm@gmail.com'],
+        to: "mauriciodelgado1300@gmail.com",
+        //to: "jcmurillo@odm.com.mx",
+        //cc: ['cma@odm.com.mx', 'jefedigitalodm@gmail.com'],
         subject: "Nuevo cliente potencial",
         html: `
         <div>

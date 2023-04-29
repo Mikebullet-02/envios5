@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:bg-white top-0 z-10 sticky w-screen lg:w-screen">
+  <div class="sm:bg-white top-0 z-10 sticky w-screen md:w-screen">
     <nav
       class="pl-0 px-6 sm:py-5 mr-4 md:mr-32 mx-auto md:flex md:justify-between md:items-center sm:order-first"
     >
@@ -24,10 +24,10 @@
         </div>
       </div>
       <div
-        class="hidden md:block sm:mr-16 sm:ml-32 md:ml-[20px] md:mr-[50px] lg:pl-10 lg:mx-auto xl:ml-[150px]"
+        class="hidden md:block sm:mr-16 sm:ml-32 md:ml-[20px] md:mr-[50px] lg:mx-auto lg:pl-[60px] xl:pl-[160px]"
       >
         <ul
-          class="flex-col mt-0 mr-20 md:flex md:flex-row md:items-center md:space-x-10 lg:space-x-10 xl:space-x-5 md:mt-0 bg-[#003368] h-screen sm:h-auto lg:bg-transparent md:bg-white sm:bg-[#003368] z-0"
+          class="flex-col mt-0 mr-20 md:flex md:flex-row md:items-center md:space-x-10 lg:space-x-20 xl:space-x-5 md:mt-0 bg-[#003368] h-screen sm:h-auto lg:bg-transparent md:bg-white sm:bg-[#003368] z-0"
         >
           <img
             src="../assets/ODMenvios.webp"
