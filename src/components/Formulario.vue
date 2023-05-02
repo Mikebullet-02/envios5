@@ -1,11 +1,13 @@
 <template>
   <div class="w-full">
     <h1
-      class="text-4xl font-black capitalize ml-5 sm:ml-16 pt-14 pb-5 2xl:ml-24"
+      class="text-4xl font-black capitalize ml-5 sm:ml-11 md:ml-14 pt-14 pb-5 2xl:ml-24"
     >
       TARIFAS PREFERENCIALES
     </h1>
-    <h2 class="text-3xl font-extrabold capitalize sm:ml-20 ml-8 2xl:ml-32">
+    <h2
+      class="text-3xl font-extrabold capitalize sm:ml-20 md:ml-16 ml-8 2xl:ml-32"
+    >
       Para impulsar tu negocio
     </h2>
     <div

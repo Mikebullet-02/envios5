@@ -44,7 +44,7 @@
       >
         <img
           src="../assets/personajeODM.webp"
-          class="h-[510px] mr-36 w-auto lg:h-[550px] lg:w-auto lg:pt-44 lg:ml-60 lg:mb-10 xl:h-96 xl:w-auto xl:pt-10 xl:mt-10 xl:mb-20 xl:ml-56 2xl:w-auto 2xl:h-[450px] 2xl:mb-20 2xl:ml-44"
+          class="h-[510px] mr-36 w-auto lg:h-[550px] lg:w-auto lg:pt-44 lg:ml-60 lg:mb-10 xl:h-96 xl:w-auto xl:pt-10 xl:mt-10 xl:mb-20 xl:ml-56 2xl:w-auto 2xl:h-[500px] 2xl:mb-10 2xl:ml-0"
           onerror="this.src='../assets/personajeODM.png'"
           alt="Personaje"
         />

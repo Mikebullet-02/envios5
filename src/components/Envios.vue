@@ -3,7 +3,7 @@
     class="bg-gray-300 w-full sm:w-full md:w-full lg:w-[1024px] xl:w-auto 2xl:w-auto mt-auto mb-0 h-auto"
   >
     <h1
-      class="text-4xl font-black capitalize ml-5 sm:ml-10 md:ml-24 pt-10 pb-5"
+      class="text-4xl font-black capitalize ml-5 sm:ml-10 md:ml-14 lg:ml-14 xl:ml-14 2xl:ml-24 pt-10 pb-5"
     >
       TIPOS DE ENVÍOS
     </h1>

@@ -12,12 +12,12 @@
     class="flex flex-col w-full sm:w-full md:w-full lg:w-[1024px] xl:w-[1280px] 2xl:w-full px-3 2xl:px-32 xl:px-32 lg:px-0 md:px-0 sm:lg:px-0 my-auto"
   >
     <h1
-      class="text-4xl font-black capitalize ml-5 sm:ml-10 md:ml-24 lg:ml-24 xl:ml-52 2xl:ml-24 pt-16 pb-5 sm:pt-15 sm:pb-5"
+      class="text-4xl font-black capitalize ml-5 sm:ml-8 md:ml-14 lg:ml-14 xl:ml-14 2xl:ml-24 pt-16 pb-5 sm:pt-15 sm:pb-5"
     >
       COBERTURA DE ENVÍOS
     </h1>
     <h2
-      class="text-2xl font-regular ml-5 sm:ml-14 md:ml-28 lg:ml-28 xl:ml-52 2xl:ml-32 pb-8"
+      class="text-2xl font-regular ml-5 sm:ml-10 md:ml-16 lg:ml-18 xl:ml-16 2xl:ml-32 pb-8"
     >
       Selecciona la ciudad desde donde envías tu paquete y el destino.
     </h2>
@@ -233,7 +233,7 @@
     </div>
 
     <div
-      class="h-auto w-full pt-5 pb-5 mt-5 text-center bg-blue-900 text-white font-extrabold align-middle text-2xl pl-0 pr-0 px-3"
+      class="h-auto w-full pt-5 pb-5 mt-5 sm:w-full text-center bg-blue-900 text-white font-extrabold align-middle text-2xl pl-0 pr-0 px-3"
     >
       <p>***VALOR DE REFERENCIA SUJETO A CAMBIOS***</p>
     </div>
